@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    list-style:none;
+}
+
+body{
+
+    background-color: greenyellow;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    font-family: arial;
+    padding-top:50px;
+
+}
+.li{
+   align-items:center;
+}
+.li a{
+   padding: 30px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor:  pointer;
+    font-weight: 900;
+    font-size:20px;
+}
+a:hover{
+    color:  black;
+    animation: aparecer 1s ease-in-out;
+}
+@keyframes aparecer {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+li {
+    animation: aparecer 1s ease-in-out;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 30px;
+}
+h1{
+    font-size: 40px;
+    font-family: "Anton", sans-serif;
+    color: #020250;
+}
+h2{
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+    color: #0404b7;
+    padding-bottom: 20px;
+}
+.article{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+
+}
+p{
+    font-size: 25px;
+}
+p::first-letter{
+    font-size: 40px;
+    font-weight: 800;
+}
+.section-h1 h1{
+    text-align:center;
+    padding:30px;
+    color:darkblue;
+}
+.section-img{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+
+}
+.footer{
+    margin-top: 3px;
+    list-style: none;
+    background-color: white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:30px;
+
+
+}
+.logo{
+    padding:20px;
+}
+.acerca h3, span{
+    text-align: center;
+    padding:20px;
+    color: greenyellow;
+    font-size:20px;
+
+}
+.contactos{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    font-size:25px;
+    padding:20px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding-top:30px;
+    gap: 10px;
+    margin: 10px;
+
+}
+.card{
+    flex-direction: column;
+    border: 2px solid black;
+    text-align: center;
+
+
+}
+.card h3{
+    padding: 10px;
+}
+.card button{
+    color: blue;
+    background-color:white;
+    width:100%;
+    font-size: 20px;
+}
+.card:hover{
+    transform: translateY(5px);
+    transition-duration: 1s;
+}
+
+
